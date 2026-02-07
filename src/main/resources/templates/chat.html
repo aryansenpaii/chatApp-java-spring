@@ -38,7 +38,7 @@
 
     function connect() {
         stompClient = new StompJs.Client({
-            webSocketFactory: () => new SockJS('/ws'),
+            webSocketFactory: () => new SockJS('/chat'),
             reconnectDelay: 5000,   // auto reconnect every 5s
             debug: (str) => console.log(str)
         });
